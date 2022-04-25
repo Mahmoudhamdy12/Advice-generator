@@ -1,19 +1,7 @@
 let span = document.querySelector('span');
 let paragraph = document.querySelector('#para')
-let svgs = document.querySelector('.svg')
 
 window.onload(getAdvice());
-
-
-// svgs.addEventListener('click', ()=> {
-//     console.log('yes')
-// });
-
-// paragraph.addEventListener("click", myFunction);
-
-// function myFunction() {
-//   console.log("yes")
-// }
 
 
 function getAdvice() {
@@ -27,3 +15,4 @@ function getAdvice() {
         console.log(error)
     })
 }
+
