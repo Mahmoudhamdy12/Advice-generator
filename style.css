@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Manrope',
+    sans-serif;
+}
+.container {
+    width: 500px;
+    height: 275px;
+    background: hsl(217, 19%, 24%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.text svg {
+    width: 444px;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 375px;
+    }
+    .text svg {
+        width: 200px;
+    }
+}
+.text {
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+.svg {
+    background: hsl(150, 100%, 66%);
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.svg:hover {
+        box-shadow: 0px 0px 15px hsl(150deg 100% 40%),
+        0px 0px 15px hsl(150deg 100% 50%);
+}
+.container .text  #advice {
+    margin-bottom: 30px;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+#para {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
